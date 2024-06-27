@@ -6,16 +6,43 @@ public class Fraction
     private int _bottom;
 
     //constructors
-    public Fraction(int top, int bottom)
+    public Fraction()
     {
-        int _top = top;
-        int _bottom = bottom;
+        int _top = 1;
+        int _bottom = 1;
     }
 
     public Fraction(int top)
     {
-        int _top = top;
-        int _bottom = 1;
+        this._top = top;
+        this._bottom = 1;
+    }
+
+    public Fraction(int top, int bottom)
+    {
+        this._top = top;
+        this._bottom = bottom;
+    }
+
+    //getters and setters
+    public int GetTop()
+    {
+        return _top;
+    }
+
+    public void SetTop(int top)
+    {
+        this._top = top;
+    }
+
+    public int GetBottom()
+    {
+        return _bottom;
+    }
+
+    public void SetBottom(int bottom)
+    {
+        this._bottom = bottom;
     }
 
     //methods
