@@ -1,0 +1,3 @@
+[Simple] walk: go for a walk: 50: Complete
+[Eternal] swim: swim 20 laps : 250
+[Checklist] clean: clean one room each day (2/500)

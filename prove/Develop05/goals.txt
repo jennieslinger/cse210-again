@@ -1,0 +1,3 @@
+[Simple]: dresser: paint the dresser: 200: Incomplete
+[Eternal]: Read: Read for pleasure : 15
+[Checklist]: dinner: make dinner for the week (0/5)
