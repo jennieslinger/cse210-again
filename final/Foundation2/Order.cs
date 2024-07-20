@@ -42,7 +42,7 @@ public class Order
         string packLabel = "Packing Label: ";
         foreach (var product in _products)
         {
-            packLabel += $"\n{product.GetProductName()} -- Product ID: {product.GetProductId()} -- Quantity: {product.GetQuantity()}\n";
+            packLabel += $"\n{product.GetProductName()} -- Product ID: {product.GetProductId()} -- Price: {product.GetProductPrice()} -- Quantity: {product.GetQuantity()}\n";
         }
         return packLabel;
     }

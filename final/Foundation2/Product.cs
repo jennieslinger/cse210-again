@@ -32,4 +32,9 @@ public class Product
     {
         return _quantity.ToString();
     }
+
+    public string GetProductPrice()
+    {
+        return _price.ToString();
+    }
 }
