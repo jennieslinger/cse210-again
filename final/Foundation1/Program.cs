@@ -6,7 +6,7 @@ class Program
     {
         List<Video> videos = new List<Video>();
 
-        Video video1 = new Video("Mastering the Art of Vegan Backing", "Chef Ellie's Kitchen", 1200);//20 mins
+        Video video1 = new Video("Mastering the Art of Vegan Baking", "Chef Ellie's Kitchen", 1200);//20 mins
         video1.AddComment("Sarah W", "This video made vegan baking look so easy! Can't wait to try out those recipes. Thanks, Chef Ellie!");
         video1.AddComment("Emily P", "Wow, those desserts look amazing! You've inspired me to give vegan baking a try. Subscribed!");
         video1.AddComment("Mark S", "As someone new to veganism, this was incredibly helpful. Loved the detailed tips on egg substitutes!");
