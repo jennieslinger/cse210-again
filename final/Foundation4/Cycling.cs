@@ -1,6 +1,6 @@
 public class Cycling : Activity
 {
-    private double _speed; //mph
+    private int _speed; //mph
 
     public Cycling(DateTime date, int duration, int speed)
         : base(date, duration)
@@ -10,7 +10,7 @@ public class Cycling : Activity
 
     public override double GetSpeed()
     {
-        return _speed; //in mph
+        return _speed; // mph
     }
 
     public override double GetPace()
@@ -20,11 +20,11 @@ public class Cycling : Activity
 
     public override string GetSummary()
     {
-        return $"{base.GetSummary()} - Speed: {_speed:} mph, Pace: {GetPace():} min/mile";
+        return $"Cycling - {base.GetSummary()} - Speed: {_speed} mph, Pace: {GetPace():F2} min/mile";
     }
 
-    public double GetDistance()
+    public override double GetDistance()
     {
-        return _speed * (_duration / 60);
+        return _speed * (_duration / 60); // miles
     }
 }

@@ -1,12 +1,14 @@
-public class Actitity
+public class Activity
 {
     private DateTime _date;
-    private int _duration;//in minutes
+    protected int _duration;//in minutes
 
-    public Activity(DateTime date, int duration);
+    public Activity(DateTime date, int duration)
     {
         _date = date;
         _duration = duration;
+    }
+
     public virtual double GetDistance()
     {
         return 0;

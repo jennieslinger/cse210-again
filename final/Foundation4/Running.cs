@@ -3,28 +3,42 @@ public class Running : Activity
     private double _distance; //in miles
 
     public Running(DateTime date, int duration, double distance)
-    : base(date, duration)
+        : base(date, duration)
     {
         _distance = distance;
     }
 
-    public double GetDistance()
+    public override double GetDistance()
     {
         return _distance;
     }
 
-    public double GetSpeed()
+    public override double GetSpeed()
     {
-        return _distance / (_duration / 60); //speed in mph
+        if (_duration > 0)
+        {
+            return _distance / (_duration / 60); //speed in mph
+        }
+        else
+        {
+            return 0.0;
+        }
     }
 
-    public double GetPace()
+    public override double GetPace()
     {
-        return _duration / _distance; // miles/min
+        if (_distance > 0 && _duration > 0)
+        {
+            return (_duration / _distance) / 60; // miles/min
+        }
+        else
+        {
+            return 0.0;
+        }
     }
 
-    public string GetSummary()
+    public override string GetSummary()
     {
-        return $"{base.GetSummary()} - Distance: {_distance:} miles, Speed: {GetSpeed():} mph, Pace: {GetPace():} min/mile";
+        return $"Running - {base.GetSummary()} - Distance: {_distance:F2} miles, Speed: {GetSpeed():F2} mph, Pace: {GetPace():F2} min/mile";
     }
 }
